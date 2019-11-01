@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		RESPONSIVE NAV BAR
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><body>
+<header class="tophead">
+	<div class="logo">
+		DESI AREA TOURNAMENT
+	</div>
+	<div>
+		<span class="menulines" onclick="opennav()">&#9776;</span>
+	</div>
+</header>
+<div class="sidenav" id="mysidenav">
+	<a href="javascript:void(0)" class="closebutton" onclick="closenav()">
+		&times;
+	</a>
+	<a href="#" ><i class="fa fa-home"></i> HOME</a>
+	<a href="#" ><i class="fa fa-image"></i> GALLERY</a>
+	<a href="#" ><i class="fa fa-id-badge"></i> CONTACT</a>
+	<a href="#" ><i class="fa fa-eject"></i> ABOUT</a>
+	<a href="#" ><i class="fa fa-refresh"></i> SERVICES</a>
+</div>
+<section class="mainpart">
+	<h2>Click to open side navbar</h2>
+	<h5>Without using bootstrap</h5>
+</section>
+<script>
+	const opennav=()=>{
+		document.getElementById('mysidenav').style.width = "220px";
+	}
+	const closenav=()=>{
+		document.getElementById('mysidenav').style.width="0px";
+	}
+</script>
+</body>
+</html>
